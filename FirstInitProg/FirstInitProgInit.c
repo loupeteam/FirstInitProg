@@ -1,5 +1,5 @@
 /********************************************************************
- * COPYRIGHT -- 
+ * COPYRIGHT --  
  ********************************************************************
  * Program: FirstInitProg
  * File: FirstInitProgInit.c
@@ -98,6 +98,7 @@ void _INIT FirstInitProgInit(void)
 	
 	// Axis pars
 	// TODO: I think we should move away from gMotorBasic inside persisters and towards local Configuration variables
+	#ifdef NUM_MOTOR 	// Only execute this loop if NUM_MOTOR is defined by ServoControl
 	for (i = 0; i < NUM_MOTOR; i++) {
 		brsitoa(i, (UDINT)indexString);
 		strcpy(axisString, "gMotorBasic");
@@ -110,7 +111,8 @@ void _INIT FirstInitProgInit(void)
 			break;
 		}
 	}
-		
+	#endif
+
 	// Axis cfg
 	for (i = 0; i < NUM_MOTOR; i++) {
 		brsitoa(i, (UDINT)indexString);
