@@ -113,20 +113,6 @@ void _INIT FirstInitProgInit(void)
 	}
 	#endif
 
-	// Axis cfg
-	for (i = 0; i < NUM_MOTOR; i++) {
-		brsitoa(i, (UDINT)indexString);
-		strcpy(axisString, "gMotorBasic");
-		appendArrayIndex(i, (UDINT)axisString);
-		strcat(axisString, ".IN.CFG");
-		if (i <= PERSIST_MAI_VARLIST) {
-			strcpy(gPersister[PERM_AXIS_CFG].IN.WorkingVariableList[i], axisString);
-		} else {
-			errcolAddError((UDINT)"Perm Data", (UDINT)"Too many axes for one persister.", 0, 0, &gErrorCollector);
-			break;
-		}
-	}
-
 	// Permanent variables
 	gPersister[PERM_CONFIGURATION].IN.pPersistentVariable = (UDINT)&gPermConfiguration;
 	gPersister[PERM_CONFIGURATION].IN.sizeofPersistentVariable = sizeof(gPermConfiguration);
