@@ -19,7 +19,23 @@
 
 void _INIT FirstInitProgInit(void)
 {
-
+	// Set gTransfer to be whether or not FirstInit cyclic has ran
+	gTransfer.transfer = gTransfer.cyclic;
+	
+	// Check to see if this is a new transfer or FirstInit cyclic has ran
+	if( strcmp(_buildDate, buildDate) != 0 || gTransfer.transfer){
+		gTransfer.bootAfterTransfer = !gTransfer.transfer;
+		
+		// Reset all data valids to false
+		for (i = 0; i < NUM_PERSISTERS; i++) {
+			gDataValid[i] = 0;
+		}
+	}
+	
+	// Update build date
+	if(!gTransfer.transfer){
+		strcpy(_buildDate, buildDate);
+	}
 	// Check for simulation
 	// This is a DevLink using a Windows share which is not supported by ARsim
 	// We use this instead of Diag function to support older CPU's

@@ -22,3 +22,6 @@ VAR
 	indexString : STRING[320] := '';
 	axisString : STRING[320] := '';
 END_VAR
+VAR RETAIN
+	_buildDate : STRING[80];
+END_VAR

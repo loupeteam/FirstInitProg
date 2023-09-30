@@ -18,5 +18,13 @@
 
 void _CYCLIC FirstInitProgCyclic(void)
 {
-	// DO NOT ADD ANY CYCLIC CODE HERE! //
+	// Set our cyclic bit to true once FirstInit cyclic runs
+	// This is to tell the init routine if the cyclic has ran
+	gTransfer.cyclic = 1;
+	
+	// DO NOT ADD ANY "OTHER" CYCLIC CODE HERE! //
+	if( strcmp(_buildDate, buildDate) != 0 ){
+		gTransfer.transfer = 1;
+	}
 }
+
