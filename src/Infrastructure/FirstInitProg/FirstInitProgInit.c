@@ -25,11 +25,6 @@ void _INIT FirstInitProgInit(void)
 	// Check to see if this is a new transfer or FirstInit cyclic has ran
 	if( strcmp(_buildDate, buildDate) != 0 || gTransfer.transfer){
 		gTransfer.bootAfterTransfer = !gTransfer.transfer;
-		
-		// Reset all data valids to false
-		for (i = 0; i < NUM_PERSISTERS; i++) {
-			gDataValid[i] = 0;
-		}
 	}
 	
 	// Update build date
@@ -103,6 +98,15 @@ void _INIT FirstInitProgInit(void)
 		
 	// Initialize Persisters
 	//-------------------------------------------------------
+	
+	#ifdef _PERSIST_
+	// Reset the data if we need to
+	if (gTransfer.bootAfterTransfer || gTransfer.transfer) {
+		// Reset all data valids to false
+		for (i = 0; i < NUM_PERSISTERS; i++) {
+			gDataValid[i] = 0;
+		}
+	}
 	
 	// Working variables
 	
@@ -185,5 +189,7 @@ void _INIT FirstInitProgInit(void)
 
 	// Load configuration.csv every startup
 	//CSVOpenFile_Init(&gPermBackup[PERM_CONFIGURATION]);
+	
+	#endif
 
 } // _INIT
