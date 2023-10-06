@@ -1,16 +1,6 @@
-# dev-template
-A template folder structure for developing libraries
+# FirstInitProg Task
 
-To use this template:
+## Overview
 
-- Create a new folder
-- lpm install development-template
-
-The local package is for the template and does not need to be retained when deployed
-
-This repo is published using github actions when there are new commits on main
-
-This repo can be manually published using:
-```
-lpm publish
-```
+This task is for initializing the machine. It is the first task run on startup and it ensures that certain conditions are met before other programs initialize.
+This could include loading a configuration file, initializing the logging system, defining File Devices, etc. It should essentially not have any cyclic code.
