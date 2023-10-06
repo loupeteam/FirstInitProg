@@ -8,10 +8,9 @@
   "license": "Loupe Software License Agreement",
   "repository": {
     "type": "git",
-    "url": "https://github.com/loupeteam/FirstInitProg"
+    "url": "git+https://github.com/loupeteam/FirstInitProg.git"
   },
   "dependencies": {
-    "@loupeteam/persist": ">=0.0.6",
     "@loupeteam/csvfilelib": ">=1.2.0",
     "@loupeteam/errorlib": ">=0.23.0",
     "@loupeteam/vartools": ">=0.10.0"
