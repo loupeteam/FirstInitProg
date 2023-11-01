@@ -1,6 +1,6 @@
 {
   "name": "@loupeteam/firstinitprogpkg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "First program run upon machine boot. Initializes file devices, machine configuration, persistent data, loggers, etc.",
   "scripts": {},
   "keywords": [],
