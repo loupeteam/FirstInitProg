@@ -19,7 +19,3 @@ VAR RETAIN
 	gPermAxisCfgs : ARRAY[0..1999] OF USINT;
 	gPermConfiguration : ARRAY[0..99999] OF USINT;
 END_VAR
-(*Error collector*)
-VAR
-	gErrorCollector : ErrorCollector_typ := (0);
-END_VAR
