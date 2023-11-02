@@ -1,3 +1,10 @@
+(********************************************************************
+ * File: Infrastructure.var
+ * Copyright (c) 2023 Loupe
+ * https://loupe.team
+ * 
+ * This file is part of FirstInitProg, licensed under the MIT License.
+ ********************************************************************)
 (*Persisters to handle memory management*)
 VAR
 	gSimulation : BOOL;
