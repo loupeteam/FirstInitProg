@@ -1,13 +1,11 @@
-/********************************************************************
- * COPYRIGHT --  
- ********************************************************************
- * Program: FirstInitProg
+/*
  * File: FirstInitProgCyclic.c
- * Author: ScismD
- * Created: January 07, 2014
- ********************************************************************
- * Implementation of program FirstInitProg
- ********************************************************************/
+ * Copyright (c) 2023 Loupe
+ * https://loupe.team
+ * 
+ * This file is part of FirstInitProg, licensed under the MIT License.
+ */
+
 
 #include <bur/plctypes.h>
 

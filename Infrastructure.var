@@ -1,3 +1,10 @@
+(*
+ * File: Infrastructure.var
+ * Copyright (c) 2023 Loupe
+ * https://loupe.team
+ * 
+ * This file is part of FirstInitProg, licensed under the MIT License.
+ *)
 (*Constants for number of persisters and permanent memory chunks*)
 VAR CONSTANT
 	NUM_PERSISTERS : USINT := 4;
