@@ -1,6 +1,17 @@
-# FirstInitProg Task
+# Info
+Package is provided by Loupe  
+https://loupe.team  
+info@loupe.team  
+1-800-240-7042  
 
-## Overview
+# Description
+Contains the first task to be run by the PLC, which carries out many required initializations that other tasks depend upon. 
 
-This task is for initializing the machine. It is the first task run on startup and it ensures that certain conditions are met before other programs initialize.
-This could include loading a configuration file, initializing the logging system, defining File Devices, etc. It should essentially not have any cyclic code.
+The included `FirstInitProg` task only contains init code, and should be deployed as the first task in TC1. 
+
+# Installation
+To install using the Loupe Package Manager (LPM), in an initialized Automation Studio project directory run `lpm install firstinitprogpkg`. For more information about LPM, see https://loupeteam.github.io/LoupeDocs/tools/lpm.html.
+
+# Licensing
+
+This project is licensed under the [MIT License](LICENSE).
