@@ -12,6 +12,6 @@ The included `FirstInitProg` task only contains init code, and should be deploye
 # Installation
 To install using the Loupe Package Manager (LPM), in an initialized Automation Studio project directory run `lpm install firstinitprogpkg`. For more information about LPM, see https://loupeteam.github.io/LoupeDocs/tools/lpm.html.
 
-## Licensing
+# Licensing
 
 This project is licensed under the [MIT License](LICENSE).
