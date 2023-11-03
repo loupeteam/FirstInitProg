@@ -15,7 +15,7 @@ Restoring memory from CSV Backups
 The included `FirstInitProg` task only contains init code, and should be deployed as the first task in TC1. 
 
 # Installation
-To install using the Loupe Package Manager (LPM), in an initialized Automation Studio project directory run `lpm install firstinitprogpkg`. For more information about LPM, see https://loupeteam.github.io/LoupeDocs/tools/lpm.html.
+To install using the Loupe Package Manager (LPM), in an initialized Automation Studio project directory run `lpm install firstinitprog`. For more information about LPM, see https://loupeteam.github.io/LoupeDocs/tools/lpm.html.
 
 # Licensing
 
