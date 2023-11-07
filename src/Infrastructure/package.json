@@ -5,7 +5,7 @@
   "scripts": {},
   "keywords": [],
   "author": "Loupe",
-  "license": "Loupe Software License Agreement",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/loupeteam/FirstInitProg"
@@ -17,7 +17,7 @@
     "@loupeteam/vartools": ">=0.10.0"
   },
   "lpm": {
-    "type": "package",
+    "type": "program",
     "logical": {
       "destination": "Infrastructure"
     },
