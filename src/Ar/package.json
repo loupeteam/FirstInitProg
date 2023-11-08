@@ -14,7 +14,8 @@
     "@loupeteam/persist": ">=0.0.6",
     "@loupeteam/csvfilelib": ">=1.2.0",
     "@loupeteam/errorprog": ">=0.1.0",
-    "@loupeteam/vartools": ">=0.10.0"
+    "@loupeteam/vartools": ">=0.10.0",
+    "@loupeteam/revinfoprog": "^2.2.0"
   },
   "lpm": {
     "type": "program",
