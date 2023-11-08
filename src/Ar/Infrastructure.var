@@ -13,10 +13,6 @@ END_VAR
 VAR RETAIN
 	gPermHomeData : ARRAY[0..999] OF USINT;
 END_VAR
-(*Error collector*)
-VAR
-	gErrorCollector : ErrorCollector_typ := (0);
-END_VAR
 (*Variables to handle transfers*)
 VAR
 	gTransfer : Transfer_typ;
