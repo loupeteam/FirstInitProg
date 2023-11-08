@@ -96,7 +96,7 @@ void _INIT FirstInitProgInit(void)
 	// Initialize Persisters
 	//-------------------------------------------------------
 	
-	#ifdef _PERSIST_
+	#ifdef NUM_PERSISTERS
 	// Reset the data if we need to
 	if (gTransfer.bootAfterTransfer || gTransfer.transfer) {
 		// Reset all data valids to false
