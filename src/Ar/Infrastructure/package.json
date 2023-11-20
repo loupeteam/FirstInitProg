@@ -1,0 +1,34 @@
+{
+  "name": "@loupeteam/firstinitprog",
+  "version": "0.1.1",
+  "description": "This is a program package.  This is the first program run upon machine boot. Initializes file devices, machine configuration, persistent data, loggers, etc.",
+  "scripts": {},
+  "keywords": [],
+  "author": "Loupe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loupeteam/FirstInitProg"
+  },
+  "dependencies": {
+    "@loupeteam/persist": ">=0.0.6",
+    "@loupeteam/csvfilelib": ">=1.2.0",
+    "@loupeteam/errorprog": ">=0.1.0",
+    "@loupeteam/vartools": ">=0.10.0",
+    "@loupeteam/revinfoprog": "^2.2.0"
+  },
+  "lpm": {
+    "type": "program",
+    "logical": {
+      "destination": "Infrastructure"
+    },
+    "physical": {
+      "cpu": [
+        {
+          "source": "FirstInitProg",
+          "destination": "TC1"
+        }
+      ]
+    }
+  }
+}
