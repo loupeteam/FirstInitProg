@@ -1,6 +1,6 @@
 {
   "name": "@loupeteam/firstinitprog",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "This is a program package.  This is the first program run upon machine boot. Initializes file devices, machine configuration, persistent data, loggers, etc.",
   "scripts": {},
   "keywords": [],
@@ -10,12 +10,15 @@
     "type": "git",
     "url": "https://github.com/loupeteam/FirstInitProg"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "@loupeteam/persist": ">=0.0.6",
-    "@loupeteam/csvfilelib": ">=1.2.0",
+    "@loupeteam/persist": ">=1.0.0",
+    "@loupeteam/csvfilelib": ">=1.0.0",
     "@loupeteam/errorprog": ">=0.1.0",
-    "@loupeteam/vartools": ">=0.10.0",
-    "@loupeteam/revinfoprog": "^2.2.0"
+    "@loupeteam/vartools": ">=1.0.0",
+    "@loupeteam/revinfoprog": ">=3.0.0"
   },
   "lpm": {
     "type": "program",

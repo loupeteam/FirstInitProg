@@ -1,13 +1,11 @@
-(********************************************************************
- * COPYRIGHT --  
- ********************************************************************
- * Library: VarInfo
- * File: VarInfo.typ
- * Author: davidblackburn
- * Created: June 02, 2014
- ********************************************************************
- * Data types of library VarInfo
- ********************************************************************)
+(*
+ * File: VarTools.typ
+ * Copyright (c) 2023 Loupe
+ * https://loupe.team
+ * 
+ * This file is part of VarTools, licensed under the MIT License.
+ *
+ *)
 
 TYPE
 	VAR_ERR_enum : 
@@ -55,5 +53,22 @@ TYPE
 		dataType : UDINT;
 		length : UDINT;
 		dimension : UINT;
+	END_STRUCT;
+	varGetAllVars_internal_typ : 	STRUCT 
+		iVar : UDINT := 65535;
+		iDeep : UINT;
+		iMember : ARRAY[0..49]OF UINT;
+		Browser : variableBrowser;
+		Deep : ARRAY[0..49]OF STRING[VAR_STRLEN_NAME];
+		NextVariable : BOOL;
+		xList : PV_xList_typ;
+		moList : slMoList;
+		AppMoName : STRING[32];
+		MoName : STRING[12];
+		checkGlobal : BOOL;
+		isGlobal : BOOL;
+		validVar : BOOL;
+		numUniqueVars : UDINT;
+		uniqueVars : ARRAY[0..1999]OF STRING[VAR_STRLEN_NAME];
 	END_STRUCT;
 END_TYPE
