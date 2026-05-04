@@ -16,6 +16,7 @@
   "dependencies": {
     "@loupeteam/persist": ">=1.0.0",
     "@loupeteam/csvfilelib": ">=1.0.0",
+    "@loupeteam/errorlib": ">=1.0.0",
     "@loupeteam/errorprog": ">=0.1.0",
     "@loupeteam/vartools": ">=1.0.0",
     "@loupeteam/revinfoprog": ">=3.0.0"

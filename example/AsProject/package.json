@@ -14,6 +14,7 @@
     "gitClient": "GitExtensions"
   },
   "dependencies": {
+    "@loupeteam/errorlib": "^1.0.0",
     "@loupeteam/librarybuilderproject": "^1.0.1",
     "@loupeteam/logthat": "^1.0.0",
     "@loupeteam/persist": "^1.0.0",
