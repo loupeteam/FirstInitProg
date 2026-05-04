@@ -1,3 +1,4 @@
 # Change log
+- 1.0.0 - AS6 migration. Bump deps to AS6-compatible versions (`@loupeteam/persist`, `@loupeteam/csvfilelib`, `@loupeteam/vartools`, `@loupeteam/errorprog`, `@loupeteam/revinfoprog` all >=1.0.0 ranges). Add direct `@loupeteam/errorlib` >=1.0.0 dep (C source uses `ErrorCollectorFn_Init`, `errcolAddError`, etc. directly). Add AS6 example project + GHA publish workflow. Example build uses stub globals for `gErrorCollector` / `buildDate` until errorprog v1.0.0 + revinfoprog v3.0.0 publish.
 - 0.01.1 - Adds protection against corruption when performing transfers (relative to FirstInitProg at least). It also restructures the repo using the new dev template so users can have an example project.
 - 0.01.0 - First version

@@ -1,6 +1,18 @@
-
+(*
+ * Stub globals for the example AsProject build.
+ *
+ * In a real consumer project these are provided by sibling program packages:
+ *   - gErrorCollector  -> @loupeteam/errorprog (Diagnostics.var)
+ *   - buildDate        -> @loupeteam/revinfoprog (RevInfo.var)
+ *
+ * Stubbed here because errorprog v1.0.0 and revinfoprog v3.0.0 are not yet
+ * published to the registry (held pending downstream investigation).
+ * Remove these stubs once both program packages are published and installable
+ * via `lpm install errorprog revinfoprog`.
+ *)
 VAR
-
+	gErrorCollector : ErrorCollector_typ;
+	buildDate : STRING[80] := '';
 END_VAR
 
 VAR CONSTANT
